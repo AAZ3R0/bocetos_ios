@@ -18,6 +18,7 @@
 		FB48A61B2C9B2B4F00985A1B /* boceto_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48A61A2C9B2B4F00985A1B /* boceto_1UITestsLaunchTests.swift */; };
 		FB48A62C2C9B363A00985A1B /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48A62B2C9B363A00985A1B /* Cita.swift */; };
 		FB48A62E2C9B36DD00985A1B /* generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48A62D2C9B36DD00985A1B /* generador_de_citas.swift */; };
+		FB9C96DE2C9DD96A00143270 /* ControladorCita.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB9C96DD2C9DD96A00143270 /* ControladorCita.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FB48A61A2C9B2B4F00985A1B /* boceto_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB48A62B2C9B363A00985A1B /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
 		FB48A62D2C9B36DD00985A1B /* generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generador_de_citas.swift; sourceTree = "<group>"; };
+		FB9C96DD2C9DD96A00143270 /* ControladorCita.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControladorCita.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				FB48A62B2C9B363A00985A1B /* Cita.swift */,
+				FB9C96DD2C9DD96A00143270 /* ControladorCita.xib */,
 			);
 			path = modelo;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9C96DE2C9DD96A00143270 /* ControladorCita.xib in Resources */,
 				FB48A6012C9B2B4F00985A1B /* Assets.xcassets in Resources */,
 				FB48A6042C9B2B4F00985A1B /* Base in Resources */,
 				FB48A5FF2C9B2B4F00985A1B /* Base in Resources */,
