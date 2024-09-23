@@ -20,4 +20,8 @@ class GeneradorDeCitas{
         
         citas_creadas.append(cita_generada)
     }
+    
+    func generar_citas_falsas(){
+        self.agregar_cita(que_dijo: "Por farmacia", quien_lo_dijo: "Tu tío")
+    }
 }

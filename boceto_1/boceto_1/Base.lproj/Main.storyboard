@@ -41,7 +41,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 <connections>
-                                                    <segue destination="kIF-JR-8dv" kind="presentation" id="FO9-Wp-ZdR"/>
+                                                    <segue destination="kIF-JR-8dv" kind="show" destinationCreationSelector="al_abrir_pantalla_citas:" id="FO9-Wp-ZdR"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="-141.22137404580153" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Controlador Pantalla Citas-->
         <scene sceneID="fyk-xX-9no">
             <objects>
-                <viewController id="kIF-JR-8dv" sceneMemberID="viewController">
+                <viewController id="kIF-JR-8dv" customClass="ControladorPantallaCitas" customModule="boceto_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OHM-wd-Hqm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,15 +147,35 @@
                                     <constraint firstAttribute="height" constant="312" id="T57-ql-Ney"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3R-Lz-ncO">
+                                <rect key="frame" x="127" y="133" width="138" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWo-Jd-AnA">
+                                <rect key="frame" x="37" y="619" width="318" height="173"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eaR-h9-0FS"/>
                         <color key="backgroundColor" red="0.2947282132518122" green="0.54133778994845361" blue="0.3817282228381772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aYO-DA-SC3" firstAttribute="centerY" secondItem="eaR-h9-0FS" secondAttribute="centerY" id="0ff-Jy-O6O"/>
+                            <constraint firstItem="S3R-Lz-ncO" firstAttribute="centerX" secondItem="eaR-h9-0FS" secondAttribute="centerX" id="2Tc-Ei-XIc"/>
+                            <constraint firstItem="dWo-Jd-AnA" firstAttribute="firstBaseline" secondItem="aYO-DA-SC3" secondAttribute="baseline" constant="52.666666666666664" symbolType="layoutAnchor" id="AwD-TS-9Or"/>
                             <constraint firstItem="aYO-DA-SC3" firstAttribute="centerX" secondItem="eaR-h9-0FS" secondAttribute="centerX" id="Yw1-Hu-StW"/>
+                            <constraint firstItem="dWo-Jd-AnA" firstAttribute="centerX" secondItem="eaR-h9-0FS" secondAttribute="centerX" id="fR5-CA-p5w"/>
+                            <constraint firstItem="aYO-DA-SC3" firstAttribute="firstBaseline" secondItem="S3R-Lz-ncO" secondAttribute="baseline" constant="24.333333333333332" symbolType="layoutAnchor" id="yGu-lN-Ue6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fMG-Ov-c2Y"/>
+                    <connections>
+                        <outlet property="nombre_de_quien_lo_dijo" destination="S3R-Lz-ncO" id="lgs-AN-n2d"/>
+                        <outlet property="que_dijo_muro_texto" destination="dWo-Jd-AnA" id="sBn-b9-QUk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4N3-Pb-AeK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -221,7 +241,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
