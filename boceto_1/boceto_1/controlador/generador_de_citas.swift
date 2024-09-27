@@ -15,17 +15,21 @@ class GeneradorDeCitas{
         citas_creadas = []
     }
     
-    func agregar_cita(que_dijo: String, quien_lo_dijo: String){
+    func agregar_cita_manual(que_dijo: String, quien_lo_dijo: String){
         var cita_generada = Cita(quien_lo_dijo: quien_lo_dijo, que_dijo: que_dijo)
         
         citas_creadas.append(cita_generada)
     }
     
+    func agregar_cita(_ cita_nueva: Cita){
+        citas_creadas.append(cita_nueva)
+    }
+    
     func generar_citas_falsas(){
-        self.agregar_cita(que_dijo: "Por farmacia", quien_lo_dijo: "Tu tío")
-        self.agregar_cita(que_dijo: "Diría que me voy, pero\n la verdad es que desviví", quien_lo_dijo: "Pauter")
-        self.agregar_cita(que_dijo: "Bruhhhhh", quien_lo_dijo: "Zombie")
-        self.agregar_cita(que_dijo: "Urghh", quien_lo_dijo: "Enderman")
+        self.agregar_cita_manual(que_dijo: "Por farmacia", quien_lo_dijo: "Tu tío")
+        self.agregar_cita_manual(que_dijo: "Diría que me voy, pero\n la verdad es que desviví", quien_lo_dijo: "Pauter")
+        self.agregar_cita_manual(que_dijo: "Bruhhhhh", quien_lo_dijo: "Zombie")
+        self.agregar_cita_manual(que_dijo: "Urghh", quien_lo_dijo: "Enderman")
     }
     
     func obtener_cita_aleatoria()->Cita{

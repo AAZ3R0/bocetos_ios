@@ -18,6 +18,7 @@
 		FB48A61B2C9B2B4F00985A1B /* boceto_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48A61A2C9B2B4F00985A1B /* boceto_1UITestsLaunchTests.swift */; };
 		FB48A62C2C9B363A00985A1B /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48A62B2C9B363A00985A1B /* Cita.swift */; };
 		FB48A62E2C9B36DD00985A1B /* generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48A62D2C9B36DD00985A1B /* generador_de_citas.swift */; };
+		FB5FFF162CA70E3B003E2684 /* ControladorGeneradorCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FFF152CA70E3B003E2684 /* ControladorGeneradorCita.swift */; };
 		FB9C96DE2C9DD96A00143270 /* ControladorCita.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB9C96DD2C9DD96A00143270 /* ControladorCita.xib */; };
 		FBB814372CA1C00B00950EB2 /* ControladorPantallaCitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB814362CA1C00B00950EB2 /* ControladorPantallaCitas.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		FB48A61A2C9B2B4F00985A1B /* boceto_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB48A62B2C9B363A00985A1B /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
 		FB48A62D2C9B36DD00985A1B /* generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generador_de_citas.swift; sourceTree = "<group>"; };
+		FB5FFF152CA70E3B003E2684 /* ControladorGeneradorCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorGeneradorCita.swift; sourceTree = "<group>"; };
 		FB9C96DD2C9DD96A00143270 /* ControladorCita.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControladorCita.xib; sourceTree = "<group>"; };
 		FBB814362CA1C00B00950EB2 /* ControladorPantallaCitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaCitas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				FBB814362CA1C00B00950EB2 /* ControladorPantallaCitas.swift */,
+				FB5FFF152CA70E3B003E2684 /* ControladorGeneradorCita.swift */,
 			);
 			path = controlador_de_citas;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				FB48A62C2C9B363A00985A1B /* Cita.swift in Sources */,
 				FB48A5FC2C9B2B4E00985A1B /* ViewController.swift in Sources */,
 				FBB814372CA1C00B00950EB2 /* ControladorPantallaCitas.swift in Sources */,
+				FB5FFF162CA70E3B003E2684 /* ControladorGeneradorCita.swift in Sources */,
 				FB48A62E2C9B36DD00985A1B /* generador_de_citas.swift in Sources */,
 				FB48A5F82C9B2B4E00985A1B /* AppDelegate.swift in Sources */,
 				FB48A5FA2C9B2B4E00985A1B /* SceneDelegate.swift in Sources */,
