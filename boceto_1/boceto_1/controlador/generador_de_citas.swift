@@ -15,6 +15,8 @@ class GeneradorDeCitas{
         citas_creadas = []
     }
     
+    
+    
     func agregar_cita_manual(que_dijo: String, quien_lo_dijo: String){
         var cita_generada = Cita(quien_lo_dijo: quien_lo_dijo, que_dijo: que_dijo)
         

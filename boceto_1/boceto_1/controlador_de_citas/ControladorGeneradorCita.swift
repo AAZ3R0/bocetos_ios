@@ -14,18 +14,17 @@ class ControladorPantallaAgregarCita: UIViewController{
     var cita_creada: Cita? = nil
     
     
-    @IBOutlet weak var quien_lo_dijo_view: UITextField!
     
-    @IBOutlet weak var que_es_lo_que_dijo: UITextField!
+    @IBOutlet weak var que_dijo_view: UITextField!
     
-    @IBAction func agregar_cita_nueva(_ sender: UIButton) {
-        cita_creada = Cita(quien_lo_dijo: quien_lo_dijo_view.text!, que_dijo: que_es_lo_que_dijo.text!)
-    }
+    @IBOutlet weak var quien_dijo_view: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    @IBAction func agregar_cita(_ sender: UIButton) {
+        cita_creada = Cita(quien_lo_dijo: quien_dijo_view.text!, que_dijo: que_dijo_view.text!)
+    }
     
-
 }
