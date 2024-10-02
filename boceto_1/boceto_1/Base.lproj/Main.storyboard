@@ -36,10 +36,10 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mr8-on-yan">
-                                                <rect key="frame" x="31" y="8" width="75" height="35"/>
+                                                <rect key="frame" x="24" y="8" width="90" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Ver citas"/>
                                                 <connections>
                                                     <segue destination="kIF-JR-8dv" kind="presentation" destinationCreationSelector="al_abrir_pantalla_citas:" modalPresentationStyle="fullScreen" id="FO9-Wp-ZdR"/>
                                                 </connections>
@@ -53,10 +53,10 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnq-EL-ME7">
-                                                <rect key="frame" x="124" y="47" width="75" height="35"/>
+                                                <rect key="frame" x="88" y="47" width="148" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Crear nueva cita"/>
                                                 <connections>
                                                     <segue destination="WeQ-24-8Tf" kind="show" id="egi-le-bRt"/>
                                                 </connections>
@@ -77,10 +77,10 @@
                                         <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
                                         <color key="tintColor" red="0.31832715709999998" green="0.6299919517" blue="0.32465604460000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rus-V2-By2" customClass="labalcito">
-                                        <rect key="frame" x="175" y="120" width="42" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Creeper genera citas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rus-V2-By2" customClass="labalcito">
+                                        <rect key="frame" x="71" y="79" width="250" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -184,7 +184,7 @@
                         <constraints>
                             <constraint firstItem="aYO-DA-SC3" firstAttribute="centerY" secondItem="eaR-h9-0FS" secondAttribute="centerY" id="0ff-Jy-O6O"/>
                             <constraint firstItem="S3R-Lz-ncO" firstAttribute="centerX" secondItem="eaR-h9-0FS" secondAttribute="centerX" id="2Tc-Ei-XIc"/>
-                            <constraint firstItem="dWo-Jd-AnA" firstAttribute="firstBaseline" secondItem="aYO-DA-SC3" secondAttribute="baseline" constant="52.666666666666664" symbolType="layoutAnchor" id="AwD-TS-9Or"/>
+                            <constraint firstItem="dWo-Jd-AnA" firstAttribute="firstBaseline" secondItem="aYO-DA-SC3" secondAttribute="baseline" constant="26.333333333333332" symbolType="layoutAnchor" id="AwD-TS-9Or"/>
                             <constraint firstItem="aE2-Gt-3RY" firstAttribute="leading" secondItem="eaR-h9-0FS" secondAttribute="leading" constant="16" id="HTL-4o-6aH"/>
                             <constraint firstItem="aYO-DA-SC3" firstAttribute="centerX" secondItem="eaR-h9-0FS" secondAttribute="centerX" id="Yw1-Hu-StW"/>
                             <constraint firstItem="dWo-Jd-AnA" firstAttribute="centerX" secondItem="eaR-h9-0FS" secondAttribute="centerX" id="fR5-CA-p5w"/>
@@ -203,44 +203,14 @@
             </objects>
             <point key="canvasLocation" x="843.51145038167931" y="3.5211267605633805"/>
         </scene>
-        <!--Controlador Generador Cita-->
+        <!--Controlador Pantalla Agregar Cita-->
         <scene sceneID="p6b-ru-kmX">
             <objects>
-                <viewController id="WeQ-24-8Tf" customClass="ControladorGeneradorCita" customModule="boceto_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WeQ-24-8Tf" customClass="ControladorPantallaAgregarCita" customModule="boceto_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GJW-mO-rWS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxX-Q8-EAf">
-                                <rect key="frame" x="145" y="756" width="94" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqp-9C-IiA">
-                                <rect key="frame" x="40" y="95" width="58" height="35"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Salir"/>
-                                <connections>
-                                    <segue destination="rdu-54-XNa" kind="unwind" unwindAction="volver_a_pantalla_inicioWithSegue:" id="4lN-lm-ppD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvK-9g-Lwm">
-                                <rect key="frame" x="141" y="698" width="98" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Crear cita"/>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hh7-Um-8qT" userLabel="Campo_que_dijo">
-                                <rect key="frame" x="34" y="525" width="313" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xmt-NZ-tlC" userLabel="Quien_lo_dijo">
-                                <rect key="frame" x="34" y="596" width="313" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vm6-sh-nW2">
                                 <rect key="frame" x="-4" y="174" width="393" height="291"/>
                                 <subviews>
@@ -271,29 +241,74 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.098594404760000004" green="0.1056957617" blue="0.114240326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqp-9C-IiA">
+                                <rect key="frame" x="40" y="95" width="58" height="35"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Salir"/>
+                                <connections>
+                                    <segue destination="rdu-54-XNa" kind="unwind" unwindAction="volver_a_pantalla_inicioWithSegue:" id="4lN-lm-ppD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvK-9g-Lwm">
+                                <rect key="frame" x="141" y="723" width="98" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Crear cita"/>
+                                <connections>
+                                    <action selector="crear_cita:" destination="WeQ-24-8Tf" eventType="touchUpInside" id="97Y-FR-jcP"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hh7-Um-8qT" userLabel="Campo_que_dijo">
+                                <rect key="frame" x="34" y="563" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xmt-NZ-tlC" userLabel="Quien_lo_dijo">
+                                <rect key="frame" x="34" y="657" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¿Quién lo dijo?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIM-kL-rWy">
+                                <rect key="frame" x="137" y="617" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.88875241623711343" green="0.88875241623711343" blue="0.88875241623711343" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¿Qué dijo?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnM-Qs-ola">
+                                <rect key="frame" x="150" y="520" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.88875241620000001" green="0.88875241620000001" blue="0.88875241620000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Z7-ms-LDU"/>
                         <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hh7-Um-8qT" firstAttribute="top" secondItem="vm6-sh-nW2" secondAttribute="bottom" constant="67" id="4Xs-R6-A6A"/>
                             <constraint firstItem="8Z7-ms-LDU" firstAttribute="trailing" secondItem="xmt-NZ-tlC" secondAttribute="trailing" constant="40" id="7bl-Pt-D3l"/>
                             <constraint firstItem="mqp-9C-IiA" firstAttribute="leading" secondItem="8Z7-ms-LDU" secondAttribute="leading" constant="40" id="9yg-bS-YPi"/>
                             <constraint firstItem="8Z7-ms-LDU" firstAttribute="trailing" secondItem="hh7-Um-8qT" secondAttribute="trailing" constant="40" id="AsZ-DZ-zRY"/>
-                            <constraint firstItem="8Z7-ms-LDU" firstAttribute="bottom" secondItem="CxX-Q8-EAf" secondAttribute="bottom" constant="128" id="Cbl-Du-EBy"/>
-                            <constraint firstItem="vm6-sh-nW2" firstAttribute="top" secondItem="8Z7-ms-LDU" secondAttribute="top" constant="276" id="ECr-Em-HKZ"/>
                             <constraint firstItem="xmt-NZ-tlC" firstAttribute="leading" secondItem="8Z7-ms-LDU" secondAttribute="leading" constant="40" id="M4d-Ou-i8t"/>
+                            <constraint firstItem="8Z7-ms-LDU" firstAttribute="bottom" secondItem="vm6-sh-nW2" secondAttribute="bottom" constant="377" id="Nj1-QT-XXu"/>
+                            <constraint firstItem="hh7-Um-8qT" firstAttribute="top" secondItem="PnM-Qs-ola" secondAttribute="bottom" constant="22" id="P3P-D2-iac"/>
                             <constraint firstItem="vm6-sh-nW2" firstAttribute="leading" secondItem="8Z7-ms-LDU" secondAttribute="leading" id="UVa-XW-w6p"/>
                             <constraint firstItem="8Z7-ms-LDU" firstAttribute="trailing" secondItem="vm6-sh-nW2" secondAttribute="trailing" id="ecd-eb-OzW"/>
-                            <constraint firstItem="8Z7-ms-LDU" firstAttribute="trailing" secondItem="CxX-Q8-EAf" secondAttribute="trailing" constant="154" id="eoc-8x-B5a"/>
                             <constraint firstItem="8Z7-ms-LDU" firstAttribute="trailing" secondItem="lvK-9g-Lwm" secondAttribute="trailing" constant="159" id="grD-Kk-FBV"/>
                             <constraint firstItem="hh7-Um-8qT" firstAttribute="leading" secondItem="8Z7-ms-LDU" secondAttribute="leading" constant="40" id="jYU-7O-g94"/>
+                            <constraint firstItem="zIM-kL-rWy" firstAttribute="top" secondItem="hh7-Um-8qT" secondAttribute="bottom" constant="20" id="jin-PU-iX3"/>
                             <constraint firstItem="mqp-9C-IiA" firstAttribute="top" secondItem="8Z7-ms-LDU" secondAttribute="top" constant="95" id="ncz-HJ-goL"/>
-                            <constraint firstItem="xmt-NZ-tlC" firstAttribute="top" secondItem="hh7-Um-8qT" secondAttribute="bottom" constant="53" id="rvh-xJ-ZzF"/>
-                            <constraint firstItem="CxX-Q8-EAf" firstAttribute="top" secondItem="lvK-9g-Lwm" secondAttribute="bottom" constant="54" id="sxu-fY-ErL"/>
+                            <constraint firstItem="8Z7-ms-LDU" firstAttribute="trailing" secondItem="zIM-kL-rWy" secondAttribute="trailing" constant="145" id="rhP-FD-KOD"/>
+                            <constraint firstItem="8Z7-ms-LDU" firstAttribute="trailing" secondItem="PnM-Qs-ola" secondAttribute="trailing" constant="163" id="rsW-kE-ImF"/>
+                            <constraint firstItem="vm6-sh-nW2" firstAttribute="top" secondItem="8Z7-ms-LDU" secondAttribute="top" constant="174" id="u9a-rh-Rwx"/>
+                            <constraint firstItem="PnM-Qs-ola" firstAttribute="top" secondItem="vm6-sh-nW2" secondAttribute="bottom" constant="17" id="uPB-Xd-6jM"/>
                             <constraint firstItem="lvK-9g-Lwm" firstAttribute="top" secondItem="xmt-NZ-tlC" secondAttribute="bottom" constant="38" id="ubU-gM-DDp"/>
+                            <constraint firstItem="xmt-NZ-tlC" firstAttribute="top" secondItem="zIM-kL-rWy" secondAttribute="bottom" constant="19" id="uuH-MX-JeJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="n0u-Wx-Dwc"/>
+                    <connections>
+                        <outlet property="que_dijo" destination="hh7-Um-8qT" id="Z4o-pi-2IG"/>
+                        <outlet property="quien_lo_dijo" destination="xmt-NZ-tlC" id="hCx-lF-2t2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZlO-nF-Mg8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="rdu-54-XNa" userLabel="Exit" sceneMemberID="exit"/>
@@ -302,20 +317,17 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="groupTableViewBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

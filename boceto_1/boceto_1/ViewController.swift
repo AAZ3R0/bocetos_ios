@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
     
     func actualizar_cantidad(){
-        labalcito.text = String(citas_disponibles.citas_creadas.count)
+        labalcito.text = "Citas generadas: " + String(citas_disponibles.citas_creadas.count)
     }
 
 
@@ -39,9 +39,11 @@ class ViewController: UIViewController {
     @IBAction func volver_a_pantalla_inicio(segue: UIStoryboardSegue){
         if let pantalla_agregar_citas = segue.source as? ControladorPantallaAgregarCita{
             citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
+            actualizar_cantidad()
         }
         
-        actualizar_cantidad()
+        
+        
     }
 }
 
