@@ -24,7 +24,13 @@ class ViewController: UIViewController {
     }
     
     func actualizar_cantidad(){
-        labalcito.text = "Citas generadas: " + String(citas_disponibles.citas_creadas.count)
+        if (labalcito.text != ""){
+            labalcito.text = "Citas generadas: " + String(citas_disponibles.citas_creadas.count)
+        }
+        else{
+            
+        }
+        
     }
 
 
@@ -36,14 +42,29 @@ class ViewController: UIViewController {
     @IBAction func al_pulsar_boton(_ sender: UIButton){
         
     }
-    @IBAction func volver_a_pantalla_inicio(segue: UIStoryboardSegue){
+    
+    
+    @IBAction func volver_a_pantalla_inicio(segue: UIStoryboardSegue!){
+        
+        
+        
         if let pantalla_agregar_citas = segue.source as? ControladorPantallaAgregarCita{
-            citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
+            
+            if (pantalla_agregar_citas.cita_creada != nil){
+                citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
+            }
             actualizar_cantidad()
         }
+    }
+    
+    override func viewDidLayoutSubviews() {
         
         
-        
+        print("Hay un cambio")
+    }
+    
+    override func viewWillLayoutSubviews() {
+        print("Empezamos la rotación de la pantalla")
     }
 }
 
